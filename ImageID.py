@@ -9,6 +9,9 @@ class ImageID:
     def get_file(self, id):
         return self.ids.get(id)
 
+    def get_ids(self):
+        return list(self.ids.keys())
+
     def __len__(self):
         return len(self.ids)
 
