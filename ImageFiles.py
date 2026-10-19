@@ -7,7 +7,7 @@ class ImageFiles:
             if file.lower().endswith(".png"):
                 fullpath = os.path.join(path, file)
                 self.imatges.append(fullpath)
-
+        self.imatges.sort()
 
     def get_files(self):
         return self.imatges
